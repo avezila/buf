@@ -1,0 +1,4 @@
+{
+  "Fast": true,
+  "Disable": ["gotype","gocyclo"]
+}

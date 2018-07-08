@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  # pgadmin:
+  #   container_name: buf_pgadmin
+  #   image: fenglc/pgadmin4:2.1
+  #   network_mode: host
+  #   restart: always
+  #   environment:
+  #     - DEFAULT_USER=
+  #     - DEFAULT_PASSWORD=
+  #     - MAIL_SERVER=
+  #     - MAIL_PORT=
+  #     - MAIL_USE_SSL=True
+  #     - MAIL_USERNAME=
+  #     - MAIL_PASSWORD=

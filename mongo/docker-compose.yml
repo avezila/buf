@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  mongodb:
+    container_name: buf_mongo
+    image: bitnami/mongodb:latest
+    network_mode: host
+    restart: always
+    volumes:
+      - $LOCALHOST_DATADIR/mongo:/bitnami
+    environment: 
+      - MONGODB_ROOT_PASSWORD=$MONGODB_ROOT_PASSWORD
+      - MONGODB_USERNAME=$MONGODB_USERNAME
+      - MONGODB_DATABASE=$MONGODB_DATABASE
+      - MONGODB_HOST=$MONGODB_HOST

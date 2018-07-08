@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  # buf:
+  # postgres:
+  #   environment: 
+  #     - DEBUG=true
+  #   volumes:
+  #     - ./postgres/pg_hba.conf:/var/lib/pgpro/std-10/data/pg_hba.conf
+  #     - ./postgres/postgresql.prod.conf:/postgresql.conf
+  # proxy:
+  #   container_name: buf_proxy
+  #   image: dannydirect/tinyproxy
+  #   network_mode: host
+
+  #   volumes:
+  #     - ./tinyproxy.conf:/etc/tinyproxy.conf
+  #   entrypoint:
+  #     - /opt/docker-tinyproxy/run.sh
+  #     - 78.107.249.1

@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  postgres:
+    container_name: buf_postgres
+    image: avezila/postgresql:5
+    volumes:
+      - $LOCALHOST_DATADIR/postgres:/var/lib/pgpro
+      - ./postgres/pgmigrate:/pgmigrate
+      - ./postgres/postgresql.conf:/postgresql.conf
+    network_mode: host
+    restart: always
+    environment: 
+      - DB_NAME=$DB_NAME
+      - DB_USER=$DB_USER
+      - DB_HOST=$DB_HOST
+      - DB_PASS=$DB_PASS
+      - TARGET=$PG_MIGRATE_TARGET

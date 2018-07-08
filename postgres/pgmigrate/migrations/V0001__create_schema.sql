@@ -1,0 +1,2 @@
+-- CREATE USER buf WITH PASSWORD 'cheburashka';
+CREATE SCHEMA buf AUTHORIZATION buf;

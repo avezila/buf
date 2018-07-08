@@ -1,0 +1,40 @@
+version: '3.4'
+
+services:
+  buf:
+    container_name: buf_buf
+    image: buf/buf
+
+    network_mode: host
+    restart: always
+    volumes:
+      - $LOCALHOST_DATADIR/torrents_data/:/torrents_data
+    environment: 
+      - CAPTCHA_DECODE_URL=$CAPTCHA_DECODE_URL
+      - CAPTCHA_DECODE_KEY=$CAPTCHA_DECODE_KEY
+      - LOCAL_IP=$LOCAL_IP
+      - DOMAIN=$DOMAIN # gongo.io
+      - PROTOCOL=$PROTOCOL # https
+      - SERVICE_PORT=$SERVICE_PORT
+
+      - DB_HOST=$DB_HOST
+      - DB_NAME=$DB_NAME
+      - DB_USER=$DB_USER
+      - DB_PASS=$DB_PASS
+      - DB_MAX_CONNECTIONS=$DB_MAX_CONNECTIONS
+
+      - MONGODB_ROOT_PASSWORD=$MONGODB_ROOT_PASSWORD
+      - MONGODB_USERNAME=$MONGODB_USERNAME
+      - MONGODB_DATABASE=$MONGODB_DATABASE
+      - MONGODB_HOST=$MONGODB_HOST
+
+      - IMAP_HREF=$IMAP_HREF
+      - IMAP_USER=$IMAP_USER
+      - IMAP_PASSWORD=$IMAP_PASSWORD
+      - IMAP_FOLDERS=$IMAP_FOLDERS
+
+      - TOR_CLIENT_PARSE_PORT=$TOR_CLIENT_PARSE_PORT
+      - TOR_CLIENT_AUDIO_PORT=$TOR_CLIENT_AUDIO_PORT
+
+      - MAIN_PROXY=$MAIN_PROXY
+      - RUTRACKER_HOST=$RUTRACKER_HOST

@@ -1,0 +1,41 @@
+// Поместите параметры в этот файл, чтобы перезаписать параметры по умолчанию и пользовательские параметры.
+{
+  "editor.tabSize": 2,
+  "editor.rulers": [
+      120
+  ],
+  "editor.formatOnSave": false,
+  "javascript.validate.enable": false,
+  "extensions.autoUpdate": true,
+  "eslint.autoFixOnSave": true,
+  "docker.enableLinting": true,
+  "workbench.iconTheme": null,
+  "html.format.enable": false,
+  "html.validate.styles": false,
+  "html.validate.scripts": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "tslint.run": "onSave",
+  "tslint.autoFixOnSave": true,
+  "window.zoomLevel": 0,
+  "workbench.sideBar.location": "left",
+  "search.useIgnoreFilesByDefault": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "typescript.check.tscVersion": false,
+  "python.pythonPath": "python3.5",
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "python3.5 autopep8",
+  "go.useCodeSnippetsOnFunctionSuggest": false,
+  "go.autocompleteUnimportedPackages": true,
+  "go.useLanguageServer": true,
+  "go.gotoSymbol.includeImports": true,
+  "go.lintTool": "gometalinter",
+  "go.docsTool": "guru",
+  "go.buildOnSave": "package",
+  "[go]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
+  "go.vetFlags": ["-composites"]
+}
